@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Mustaq's Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0.5rem auto;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+        .about-me, .projects, .skills, .education, .social-media, .contact {
+            margin: 20px 0;
+        }
+        .projects-item, .contact p {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .projects-item img {
+            display: block;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        .skills ul, .social-media ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skills li, .social-media li {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .skills li:hover, .social-media li:hover {
+            background-color: #45a049;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+            }
+            .section-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shaik Mustaq</h1>
+        <img src="images/passport size photo.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Recent Graduate | Tech Enthusiast | Continuous Learner</p>
+    </header>
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#social-media">Social Media</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about-me" class="about-me">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Mustaq, a recent Electronics & Communication Engineering graduate with a strong passion for software engineering. During my academic journey, I developed a solid foundation in Python, SQL, JavaScript, and React.js, and I'm eager to apply these skills to real-world projects.</p>
+            <p>After completing my B.Tech, I enrolled in a comprehensive 9-month full-stack course where I honed my skills in front-end and back-end development. This experience allowed me to work on various projects, including 'Women's Safety Using GIS,' which integrates emergency response features and a vibration sensor to detect falls, and a temperature sensor project using the Bolt IoT module that sends alerts when temperatures exceed set limits.</p>
+            <p>I'm actively seeking opportunities where I can leverage my technical skills and academic background to contribute to innovative software development initiatives. My goal is to become a successful software engineer and eventually be my own boss. I am particularly interested in roles that challenge me to think creatively and solve complex problems.</p>
+        </section>
+        <section id="projects" class="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-item">
+                <font size="+1"><p><b>Project Title: </b>Women's Safety Using GIS</p></font>
+                <img src="images\Project 1 image.jpg" alt="Women's Safety Using GIS" class="project1-pic">
+                <h4>Description:</h4>
+                <p>The "Women's Safety Using GIS" project is designed to provide a comprehensive safety solution for women in dangerous situations. The system incorporates an Emergency switch and a Vibration sensor to detect falls due to health conditions.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><b>Emergency Switch:</b> A physical switch that, when activated, sends an immediate alert to predefined contacts, including authorities and emergency services.</li>
+                    <li><b>Vibration Sensor:</b> Detects sudden movements or falls, especially useful for individuals with health conditions that may lead to emergencies.</li>
+                    <li><b>GIS Integration:</b> Utilizes Geographic Information System (GIS) technology to pinpoint the user's location accurately, allowing for quick response in case of an emergency.</li>
+                    <li><b>Real-time Alerts:</b> Sends alerts via SMS and email to notify contacts about the user's situation and location.</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Provides a sense of security and peace of mind to women, especially those in vulnerable situations.</li>
+                    <li>Enables quick and efficient response from authorities and emergency services, potentially saving lives.</li>
+                    <li>Promotes the use of technology for societal benefit, showcasing the potential of GIS in public safety applications.</li>
+                </ul>
+                <h4>Future Enhancements:</h4>
+                <ul>
+                    <li>Integration with mobile apps for easier access and additional features.</li>
+                    <li>Incorporation of machine learning algorithms for advanced fall detection and emergency prediction.</li>
+                    <li>Expansion to include more safety features and functionalities based on user feedback and evolving technology.</li>
+                </ul>
+                <p>The <b>"Women's Safety Using GIS"</b> project demonstrates the potential of technology to address important societal issues and improve the safety and well-being of individuals in need.</p>
+            </div>
+            <div class="projects-item">
+                <font size="+1"><p><b>Project Title: </b>Temperature Sensor with Bolt IoT Module</p></font>
+                <img src="images\Project 2 image.jpg" alt="Temperature Sensor with Bolt IoT Module" class="project2-pic">
+                <h4>Description:</h4>
+                <p>The Temperature Monitoring System using the LM35 Sensor is a hardware project that measures and displays real-time temperature readings. The LM35 is a precision integrated-circuit temperature sensor that provides an analog voltage output proportional to the temperature in Celsius.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li><b>LM35 Temperature Sensor:</b> The LM35 sensor provides accurate and reliable temperature readings with a linear output proportional to the Celsius temperature.</li>
+                    <li><b>Analog-to-Digital Conversion:</b> The analog output from the LM35 is converted to a digital signal using an ADC (Analog-to-Digital Converter) for processing.</li>
+                    <li><b>Microcontroller:</b> A microcontroller, such as Bolt Wi-Fi module, processes the digital temperature readings and controls the display output.</li>
+                    <li><b>Real-time Monitoring:</b> The system continuously monitors the temperature and updates the display in real-time.</li>
+                </ul>
+                <h4>Benefits:</h4>
+                <ul>
+                    <li>Provides a simple and cost-effective solution for monitoring temperature in various environments.</li>
+                    <li>Can be used in applications where temperature control and monitoring are critical, such as in industrial processes, environmental monitoring, and home automation.</li>
+                    <li>Easy to interface with other sensors and components for extended functionality.</li>
+                </ul>
+                <h4>Future Enhancements:</h4>
+                <ul>
+                    <li>Wireless Connectivity: Integrate wireless communication modules (e.g., Wi-Fi or Bluetooth) for remote monitoring and data logging.</li>
+                    <li>Cloud Integration: Send temperature data to cloud platforms for real-time data analysis and visualization.</li>
+                    <li>Mobile App: Develop a mobile application to receive temperature alerts and monitor readings from anywhere.</li>
+                </ul>
+                <p>This project demonstrates the practical application of temperature sensors in real-world scenarios, providing valuable insights for various temperature-sensitive applications.</p>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>HTML & CSS</li>
+            </ul>
+        </section>
+        <section id="education" class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="projects-item">
+                <h4>Bachelor of Technology in Electronics & Communication Engineering</h4>
+                <p>JNTUA University, Year of Graduation: 2022</p>
+            </div>
+            <div class="projects-item">
+                <h4>Full-Stack Development Course</h4>
+                <p>Pyspiders Institute, Duration: 9 months</p>
+            </div>
+        </section>
+        <section id="social-media" class="social-media">
+            <h2 class="section-title">Social Media</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/shaik-mustaq/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/techjourney2024/" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="projects-item">
+                <p>Email: <a href="mailto:shaikmustaqm169@gmail.com">shaikmustaqm169@gmail.com</a></p>
+                <p>Phone: +91 75694 83013</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Shaik Mustaq. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
